@@ -1,0 +1,218 @@
+[
+ {
+  "id": "colosseum",
+  "tris": 70665,
+  "kb": 2778,
+  "h": 48,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ },
+ {
+  "id": "bigben",
+  "tris": 107672,
+  "kb": 7293,
+  "h": 96,
+  "minY": 0,
+  "tex": true,
+  "flat": false
+ },
+ {
+  "id": "stonehenge",
+  "tris": 64122,
+  "kb": 1517,
+  "h": 7,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ },
+ {
+  "id": "arcdetriomphe",
+  "tris": 2244,
+  "kb": 347,
+  "h": 50,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ },
+ {
+  "id": "tokyotower",
+  "tris": 88707,
+  "kb": 3780,
+  "h": 333,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ },
+ {
+  "id": "notredame",
+  "tris": 58345,
+  "kb": 2080,
+  "h": 69,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ },
+ {
+  "id": "cntower",
+  "tris": 2282,
+  "kb": 265,
+  "h": 553,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ },
+ {
+  "id": "onewtc",
+  "tris": 1646,
+  "kb": 301,
+  "h": 541,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ },
+ {
+  "id": "flatiron",
+  "tris": 11551,
+  "kb": 597,
+  "h": 87,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ },
+ {
+  "id": "empirestate",
+  "tris": 59232,
+  "kb": 2535,
+  "h": 443,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ },
+ {
+  "id": "tajmahal",
+  "tris": 220335,
+  "kb": 6177,
+  "h": 73,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ },
+ {
+  "id": "washingtonmon",
+  "tris": 58788,
+  "kb": 1576,
+  "h": 169,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ },
+ {
+  "id": "whitehouse",
+  "tris": 383318,
+  "kb": 6970,
+  "h": 21,
+  "minY": 0,
+  "tex": false,
+  "flat": true
+ },
+ {
+  "id": "goldengate",
+  "tris": 27974,
+  "kb": 1384,
+  "h": 227,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ },
+ {
+  "id": "cristo",
+  "tris": 24904,
+  "kb": 828,
+  "h": 38,
+  "minY": 0,
+  "tex": true,
+  "flat": false
+ },
+ {
+  "id": "burjkhalifa",
+  "tris": 18451,
+  "kb": 256,
+  "h": 828,
+  "minY": 0,
+  "tex": false,
+  "flat": true
+ },
+ {
+  "id": "liberty",
+  "tris": 37181,
+  "kb": 1381,
+  "h": 93,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ },
+ {
+  "id": "pisa",
+  "tris": 161024,
+  "kb": 6504,
+  "h": 57,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ },
+ {
+  "id": "burjalarab",
+  "tris": 8610,
+  "kb": 601,
+  "h": 321,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ },
+ {
+  "id": "nest",
+  "tris": 148796,
+  "kb": 2658,
+  "h": 69,
+  "minY": 0,
+  "tex": false,
+  "flat": true
+ },
+ {
+  "id": "sydneyopera",
+  "tris": 7985,
+  "kb": 106,
+  "h": 65,
+  "minY": 0,
+  "tex": false,
+  "flat": true
+ },
+ {
+  "id": "chichenitza",
+  "tris": 14414,
+  "kb": 729,
+  "h": 30,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ },
+ {
+  "id": "giza",
+  "tris": 486,
+  "kb": 282,
+  "h": 139,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ },
+ {
+  "id": "towerbridge",
+  "tris": 343012,
+  "kb": 8717,
+  "h": 65,
+  "minY": 0,
+  "tex": true,
+  "flat": true
+ }
+]
