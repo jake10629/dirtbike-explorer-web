@@ -35,7 +35,8 @@ h2{font-size:22px;font-weight:800;margin-bottom:16px;letter-spacing:-.01em}
 .grid figcaption{padding:9px 13px;font-size:13px;color:var(--mut)}
 .big{background:var(--panel);border-radius:16px;padding:28px;margin-top:6px}
 .big p{color:var(--mut);margin-top:10px;max-width:640px}
-.support{display:inline-block;margin-top:18px;border:1px solid rgba(138,180,255,.45);color:var(--acc);font-weight:700;padding:12px 26px;border-radius:12px;text-decoration:none}
+.supports{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.support{display:inline-block;border:1px solid rgba(138,180,255,.45);color:var(--acc);font-weight:700;padding:12px 26px;border-radius:12px;text-decoration:none}
 .support.soon{opacity:.55;pointer-events:none}
 footer{padding:38px 0 46px;color:#5b6b7d;font-size:13px;text-align:center}
 footer a{color:#7f93a8}
@@ -83,7 +84,11 @@ footer a{color:#7f93a8}
     <p>This is a one-person project: one rider, every street on Earth. It improves every week — time trials, weather, landmarks, snow above the treeline, and whatever breaks when someone rides somewhere nobody has ridden before.</p>
     <p>If you enjoy it, support keeps the map servers running and the updates coming.</p>
     <!-- STRIPE: set href and remove class "soon" when the link arrives -->
-    <a class="support" id="support" href="https://buy.stripe.com/bJe6oGcas8N02fGfLt6J200" target="_blank" rel="noopener">Support the project ♥</a>
+    <div class="supports">
+      <a class="support" href="https://buy.stripe.com/7sY6oGfmE9R43jK8j16J201" target="_blank" rel="noopener">$3 ♥</a>
+      <a class="support" href="https://buy.stripe.com/00wcN4a2kd3gbQg6aT6J202" target="_blank" rel="noopener">$5 ♥♥</a>
+      <a class="support" href="https://buy.stripe.com/4gMaEW8Ygd3g8E46aT6J203" target="_blank" rel="noopener">$10 ♥♥♥</a>
+    </div>
   </div>
 </section>
 
