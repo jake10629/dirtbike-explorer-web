@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — Ride Any Address</title>
+<meta name="description" content="Privacy policy for Ride Any Address / Dirt Bike Explorer: no accounts, no tracking, no ads. What little the servers see, explained plainly.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏍️</text></svg>">
+<style>
+:root{--bg:#0b1220;--panel:#14212e;--ink:#eef1f6;--mut:#9fb3c8;--acc:#8ab4ff;--acc2:#2178dd}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px 60px}
+header{padding:56px 0 8px}
+.kicker{color:var(--acc);font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase}
+h1{font-size:clamp(30px,6vw,44px);font-weight:900;letter-spacing:-.02em;line-height:1.1;margin:10px 0 6px}
+.date{color:var(--mut);font-size:14px}
+h2{font-size:19px;font-weight:800;margin:34px 0 8px;letter-spacing:-.01em}
+p{color:var(--mut);margin:10px 0;max-width:64ch}
+p strong{color:var(--ink);font-weight:700}
+ul{color:var(--mut);margin:10px 0 10px 22px;max-width:62ch}
+li{margin:6px 0}
+a{color:var(--acc)}
+.tldr{background:var(--panel);border-radius:14px;padding:18px 20px;margin:22px 0 6px}
+.tldr p{margin:4px 0}
+footer{padding:34px 0 46px;color:#5b6b7d;font-size:13px}
+footer a{color:#7f93a8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">Ride Any Address · Dirt Bike Explorer</div>
+  <h1>Privacy</h1>
+  <div class="date">Effective 2 September 2026</div>
+</header>
+
+<div class="tldr">
+  <p><strong>The short version:</strong> there are no accounts, no ads, no tracking,
+  no cookies, and no third-party analytics. The game doesn't know who you are and
+  has no way to find out. What follows explains the small number of things our
+  servers necessarily see in order to work, and what happens to them.</p>
+</div>
+
+<h2>What we don't collect</h2>
+<p>The game has no sign-up and no user accounts. We do not collect names, email
+addresses, precise locations, device identifiers, advertising identifiers, or
+contact lists. We set no cookies. We run no third-party analytics or advertising
+SDKs — not on this website, not in the browser game, and not in the iOS app. We
+do not sell, share, or monetise data of any kind.</p>
+
+<h2>What stays on your device</h2>
+<p>Your settings, unlocked riders, coins, and a cache of recently ridden map areas
+are stored in your browser's local storage (or the app's equivalent). This data
+never leaves your device and is deleted if you clear your browser data or remove
+the app.</p>
+
+<h2>What our servers see when you ride</h2>
+<p>Riding a location requires fetching map data for it, and the address you type
+must be turned into coordinates. That means:</p>
+<ul>
+  <li><strong>Geocoding.</strong> The address or place name you type is sent to
+  <a href="https://locationiq.com/privacy" rel="noreferrer">LocationIQ</a> to be
+  converted into coordinates. We don't store it.</li>
+  <li><strong>Map data.</strong> The game requests street and building data for
+  the area you're riding from our own map server, and as a fallback from public
+  <a href="https://www.openstreetmap.org/copyright" rel="noreferrer">OpenStreetMap</a>
+  Overpass servers. These requests describe a map area, not a person, and are
+  used only to answer the request. Our server caches the <em>map data itself</em>
+  so the next rider of the same area gets it faster — that cache contains map
+  content, nothing about you.</li>
+  <li><strong>Terrain.</strong> Elevation tiles are fetched from a public dataset
+  hosted on Amazon S3.</li>
+</ul>
+<p>Like any web servers, these services see the ordinary technical parts of an
+HTTP request (such as your IP address) for the duration needed to answer it. We
+do not record IP addresses. The third-party services above have their own
+privacy policies.</p>
+
+<h2>Server metrics</h2>
+<p>Our map server records aggregate technical metrics about the requests it
+serves: request counts, cache performance, response times, and a coarse client
+class (website, app, or test environment). These metrics contain no IP
+addresses, no device or user identifiers, no cookies, and no location or riding
+data. They cannot be linked to any individual and are deleted automatically
+within about 90 days. We use them to keep the map servers fast and to count how
+many sessions the game serves.</p>
+
+<h2>The iOS app</h2>
+<p>The iOS app collects nothing, which is what its App Store listing declares.
+It contains no analytics and no advertising. Its network requests are the map,
+terrain, and geocoding requests described above, answered in real time and not
+recorded — the app is excluded even from the session counting our web metrics
+perform. In-app purchases are processed entirely by Apple; we receive
+confirmation that a purchase happened, never your payment details or identity.</p>
+
+<h2>Payments and donations</h2>
+<p>Donation links on our site go to Stripe-hosted checkout pages. Payment
+details are handled by <a href="https://stripe.com/privacy" rel="noreferrer">Stripe</a>
+and never touch our servers.</p>
+
+<h2>Children</h2>
+<p>The game is suitable for general audiences and collects no personal
+information from anyone, including children.</p>
+
+<h2>Changes</h2>
+<p>If the game ever adds something this policy doesn't cover — advertising on
+the website, for example — we'll update this page first and change its effective
+date. This page is the single, current statement of what the game does.</p>
+
+<h2>Contact</h2>
+<p>Questions about any of this:
+<a href="mailto:farmsteadproapp@gmail.com">farmsteadproapp@gmail.com</a>.</p>
+
+<footer>
+  <a href="/">Home</a> · <a href="/play/">Play</a> ·
+  Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors
+</footer>
+
+</div>
+</body>
+</html>
