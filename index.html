@@ -38,6 +38,13 @@ h2{font-size:22px;font-weight:800;margin-bottom:16px;letter-spacing:-.01em}
 .supports{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
 .support{display:inline-block;border:1px solid rgba(138,180,255,.45);color:var(--acc);font-weight:700;padding:12px 26px;border-radius:12px;text-decoration:none}
 .support.soon{opacity:.55;pointer-events:none}
+/* Ad slot. Reserved height so revealing it never shifts layout (CLS). Inert until a
+   network tag is pasted in AND the `hidden` attribute is removed from #adsec. */
+.adwrap{border:1px solid rgba(138,180,255,.16);border-radius:14px;padding:14px;
+  display:flex;flex-direction:column;align-items:center;gap:8px;background:rgba(20,33,46,.45)}
+.adlabel{color:#5b6b7d;font-size:10px;letter-spacing:.16em;text-transform:uppercase}
+#ad-slot{min-height:90px;width:100%;max-width:728px;display:flex;align-items:center;justify-content:center}
+@media(max-width:640px){#ad-slot{min-height:250px}}
 footer{padding:38px 0 46px;color:#5b6b7d;font-size:13px;text-align:center}
 footer a{color:#7f93a8}
 @media(max-width:640px){.grid{grid-template-columns:1fr}header{padding:44px 0 30px}}
@@ -89,6 +96,35 @@ footer a{color:#7f93a8}
       <a class="support" href="https://buy.stripe.com/00wcN4a2kd3gbQg6aT6J202" target="_blank" rel="noopener">$5 ♥♥</a>
       <a class="support" href="https://buy.stripe.com/4gMaEW8Ygd3g8E46aT6J203" target="_blank" rel="noopener">$10 ♥♥♥</a>
     </div>
+  </div>
+</section>
+
+<!-- ===================== AD SLOT =========================================
+     INERT BY DEFAULT. Nothing is requested and no third-party script runs until
+     BOTH of these happen:
+       1. a network's tag is pasted inside #ad-slot
+       2. the `hidden` attribute is removed from <section id="adsec">
+     So this commit changes nothing a visitor can observe, and collects nothing.
+
+     Placement: deliberately BELOW the support/donate block. At this traffic level a
+     single $3 donation is worth on the order of a thousand ad impressions, so the ad
+     must never compete for attention with the Stripe links or the "Play in Browser"
+     button above them.
+
+     BEFORE ACTIVATING, three things are required, not optional:
+       - a privacy policy at /privacy (none exists on this site today) and a link to
+         it in the footer. AdSense requires it, GDPR requires it, and the App Store
+         listing needs a policy URL that is actually accurate.
+       - if the network sets cookies or profiles users (AdSense, Media.net, Ezoic),
+         a consent banner that BLOCKS the ad script until EEA/UK visitors opt in.
+         Google requires a Google-certified CMP for that traffic.
+       - keep it off /play/ entirely. The ad lives on this page only, never during
+         a ride, and no ad SDK ever goes into the iOS or Android app.
+     ====================================================================== -->
+<section id="adsec" hidden>
+  <div class="adwrap">
+    <div class="adlabel">Advertisement</div>
+    <div id="ad-slot"><!-- network tag goes here --></div>
   </div>
 </section>
 
