@@ -13937,8 +13937,11 @@ function __photoOpenBtn(){
  else{
   e=document.createElement("button");e.id="dbxPhOpen";
   e.textContent="Camera";
-  e.style.cssText="position:fixed;right:calc(24px + var(--dbx-sar, env(safe-area-inset-right)));"+
-   "top:calc(96px + var(--dbx-sat, env(safe-area-inset-top)));z-index:25;display:none;"+
+  /* b969 moved off the top right: that corner belongs to the coins, the Menu and the
+     minimap, and the button sat on top of the map. The left column below the street name is
+     empty down to the joystick. */
+  e.style.cssText="position:fixed;left:calc(16px + var(--dbx-sal, env(safe-area-inset-left)));"+
+   "top:calc(124px + var(--dbx-sat, env(safe-area-inset-top)));z-index:25;display:none;"+
    "background:rgba(18,16,14,.76);color:#f3e7cf;border:1.5px solid rgba(243,231,207,.5);"+
    "border-radius:12px;padding:10px 15px;font:800 13px 'Archivo',system-ui,sans-serif;"+
    "letter-spacing:.03em;touch-action:manipulation;cursor:pointer;-webkit-tap-highlight-color:transparent;"+
